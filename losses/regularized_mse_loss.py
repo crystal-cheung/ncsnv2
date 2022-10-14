@@ -15,3 +15,4 @@ class Regularized_MSE_Loss(torch.nn.Module):
         for i in nn.parameters:
 
         return torch.mean(loss)
+    

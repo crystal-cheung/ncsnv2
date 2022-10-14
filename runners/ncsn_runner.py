@@ -186,7 +186,7 @@ class NCSNRunner():
                         ## Different part from NeurIPS 2019.
                         ## Random state will be affected because of sampling during training time.
                         init_samples = torch.rand(36, self.config.data.channels,
-                                                  self.config.data.image_size, self.config.data.image_size,
+                                                       self.config.data.image_size, self.config.data.image_size,
                                                   device=self.config.device)
                         init_samples = data_transform(self.config, init_samples)
 
